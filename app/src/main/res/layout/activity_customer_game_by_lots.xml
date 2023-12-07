@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer_game_byLots"
+    android:background="#FBF3DB">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_bylots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 제비 뽑기"
+                android:fontFamily="@font/neo"
+                android:textColor="#B35A0E"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="150dp"
+                android:background="@drawable/ic_home"
+                android:backgroundTint="#B35A0E" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginTop="10dp"
+            android:background="#B35A0E"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_input_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Input Menu"
+                android:fontFamily="@font/superbold"
+                android:textColor="#B35A0E"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+            <EditText
+                android:id="@+id/et_input_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="메뉴를 입력해주세요"
+                android:fontFamily="@font/superregular"
+                android:inputType="text"
+                android:textColorHint="#B35A0E" />
+
+            <Button
+                android:id="@+id/btn_inputMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_org"
+                android:text="메뉴 넣기"
+                android:fontFamily="@font/superbold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List|"
+                android:fontFamily="@font/superbold"
+                android:textColor="#B35A0E"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/txt_printMenu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="#F4B782"
+                android:ems="15"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_byLots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_org"
+                android:layout_marginTop="30dp"
+                android:text="제비 뽑기"
+                android:fontFamily="@font/superbold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_org"
+                android:text="초기화"
+                android:fontFamily="@font/superbold"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

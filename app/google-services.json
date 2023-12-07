@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "378640359226",
+    "project_id": "dgaj-2a484",
+    "storage_bucket": "dgaj-2a484.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378640359226:android:e4d5b29301943f7aa73a03",
+        "android_client_info": {
+          "package_name": "com.example.dgaj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378640359226-uvknk8m5v3b7e3r05c03p7pfemsir130.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEh0zVlVqRXdquuOR__PGf4RH8GlZ0zeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378640359226-uvknk8m5v3b7e3r05c03p7pfemsir130.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+    ],
+  "configuration_version": "1"
+}

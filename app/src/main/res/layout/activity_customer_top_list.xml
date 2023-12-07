@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/customer_top_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer_topList"
+    android:background="#FBF3DB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_top10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="9dp"
+            android:text="Top 10"
+            android:fontFamily="@font/neo"
+            android:textColor="#B35A0E"
+            android:textSize="35dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="22dp"
+            android:background="#B35A0E"
+            tools:ignore="MissingConstraints" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:scrollbarDefaultDelayBeforeFade="500000"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="1dp"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="512dp"
+                    android:clipToPadding="false"
+                    android:padding="16dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

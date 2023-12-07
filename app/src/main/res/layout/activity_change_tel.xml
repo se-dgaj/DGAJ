@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/change_tel"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#FBF3DB" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호 변경"
+            android:fontFamily="@font/neo"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="9dp"
+            android:textColor="#B35A0E"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="409dp"
+            android:layout_height="7dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
+            android:background="#B35A0E"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_existTel"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="기존 전화번호"
+                    android:fontFamily="@font/superbold"
+                    android:textColor="#B35A0E"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_existTel"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:hint="기존 전화번호 입력"
+                    android:fontFamily="@font/superregular"
+                    android:inputType="phone"
+                    android:textColorHint="#B17039"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/btn_checkTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#B35A0E"
+                    android:text="확인"
+                    android:fontFamily="@font/superbold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_newTel"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="변경 전화번호"
+                    android:fontFamily="@font/superbold"
+                    android:textColor="#B35A0E"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_newTel"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:hint="변경할 전화번호 입력"
+                    android:fontFamily="@font/superregular"
+                    android:inputType="phone"
+                    android:textColorHint="#B17039"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_checkTel"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="전화번호 확인"
+                    android:fontFamily="@font/superbold"
+                    android:textColor="#B35A0E"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_checkTel"
+                    android:layout_width="190dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:hint="변경할 전화번호 재입력"
+                    android:fontFamily="@font/superregular"
+                    android:inputType="phone"
+                    android:textColorHint="#B17039"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#B35A0E"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/superbold"
+            android:text="변경" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FBF3DB"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="56dp">
+
+
+        <ImageView
+            android:layout_width="41dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:src="@drawable/ic_waiting_list" />
+
+        <LinearLayout
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/customer_wait_rest_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/superbold"
+                android:text="NAME"
+                android:textColor="#B35A0E"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/customer_wait_rest_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/superbold"
+                android:text="ADDRESS"
+                android:textColor="#B35A0E"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/customer_wait_rest_fD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/superbold"
+                android:text="FOOD TYPE"
+                android:textColor="#B35A0E"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_wait_my_info"
+                android:layout_width="76dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="#B35A0E"
+                android:fontFamily="@font/superbold"
+                android:text="대기정보"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_delete_my_wait"
+                android:layout_width="78dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="#B35A0E"
+                android:fontFamily="@font/superbold"
+                android:text="삭제"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

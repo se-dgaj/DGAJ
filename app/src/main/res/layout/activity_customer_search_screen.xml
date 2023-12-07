@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/customer_search_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer_searchScreen">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_customer_search_screen"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        </include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_search_screen"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="409dp"
+                android:layout_height="6dp"
+                android:background="#B35A0E" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/date_search_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/superbold"
+                    android:text="0000년 00월 00일"
+                    android:textColor="#9AC10C"
+                    android:textSize="22.5dp" />
+
+                <TextView
+                    android:id="@+id/txt_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/neo"
+                    android:text="오늘의 메뉴"
+                    android:textColor="#B35A0E"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txt_search_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:fontFamily="@font/superbold"
+                        android:textColor="#B35A0E"
+                        android:inputType="text"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/btn_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#B35A0E"
+                        android:fontFamily="@font/superbold"
+                        android:text="검색"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_random_select"
+                        android:layout_width="95dp"
+                        android:layout_height="wrap_content"
+                        android:background="#B35A0E"
+                        android:fontFamily="@font/superbold"
+                        android:text="랜덤"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/btn_top10"
+                        android:layout_width="95dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="#B35A0E"
+                        android:fontFamily="@font/superbold"
+                        android:text="Top10"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_game"
+                    android:layout_width="197dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#B35A0E"
+                    android:fontFamily="@font/superbold"
+                    android:text="메뉴 정하기"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:background="#B35A0E" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        app:headerLayout="@layout/nav_header"
+        android:background="#FBF3DB"
+        android:backgroundTint="#FBF3DB"
+        app:itemTextColor="#000000"
+        app:itemIconTint="#B35A0E"
+        app:itemTextAppearance="@style/Font_Superbold"
+        app:menu="@menu/menu_for_customer">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

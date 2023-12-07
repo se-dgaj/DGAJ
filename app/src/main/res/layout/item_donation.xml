@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/framelayout"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/donorNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/superbold"
+            android:text="Donor Name"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#B35A0E"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/centerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/superbold"
+            android:text="Center Name"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#B35A0E"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/articleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/superbold"
+            android:text="Article"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#B35A0E"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/cntTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/superbold"
+            android:text="Count"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#B35A0E"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

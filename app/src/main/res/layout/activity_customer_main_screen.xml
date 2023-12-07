@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/customer_main_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer_mainScreen"
+    android:background="#FBF3DB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_customer_search_screen"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+        </include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/mapFragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="390dp"
+                android:layout_height="238dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+            </fragment>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/neo"
+                    android:text="오늘의 가게 추천"
+                    android:textColor="#B35A0E"
+                    android:textSize="30dp">
+
+                </TextView>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#FFB372"
+                            android:scrollbarDefaultDelayBeforeFade="500000"
+                            android:scrollbarFadeDuration="0"
+                            android:scrollbarThumbVertical="@drawable/scrollbar"
+                            android:scrollbarSize="1dp"
+                            >
+                        </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        app:headerLayout="@layout/nav_header"
+        android:background="#FBF3DB"
+        app:itemTextColor="#000000"
+        app:itemIconTint="#B35A0E"
+        app:itemTextAppearance="@style/Font_Superbold"
+        android:backgroundTint="#FBF3DB"
+        app:menu="@menu/menu_for_customer">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

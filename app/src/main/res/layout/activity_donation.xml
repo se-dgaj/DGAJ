@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:background="#FBF3DB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_donating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="9dp"
+            android:textColor="#B35A0E"
+            android:textSize="35dp"
+            android:text="기부 하기"
+            android:fontFamily="@font/neo"/>
+
+        <TextView
+            android:layout_width="409dp"
+            android:layout_height="7dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="22dp"
+            android:background="#B35A0E"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/txt_name_sender"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/superbold"
+                    android:gravity="center"
+                    android:text="보내시는 분"
+                    android:textColor="#B35A0E"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/name_sender"
+                    android:layout_width="270dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/txt_input"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/txt_article_to_donate"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/superbold"
+                    android:gravity="center"
+                    android:text="나눌 물품"
+                    android:textColor="#B35A0E"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/article_to_donate"
+                    android:layout_width="270dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/txt_input"
+                    android:ems="10"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/txt_cnt_article"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/superbold"
+                    android:gravity="center"
+                    android:text="수량"
+                    android:textColor="#B35A0E"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/cnt_article"
+                    android:layout_width="270dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/txt_input"
+                    android:ems="10"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_donagint_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/superbold"
+                    android:gravity="center"
+                    android:text="전화번호"
+                    android:textColor="#B35A0E"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/superbold"
+                    android:text="010 -"
+                    android:textColor="#B35A0E"
+                    android:textSize="28sp" />
+
+                <EditText
+                    android:id="@+id/tel_donating01"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/txt_input"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="4" />
+
+                <TextView
+                    android:id="@+id/txt_tel_donating01"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:text=" -"
+                    android:textColor="#B35A0E"
+                    android:textSize="28sp" />
+
+                <EditText
+                    android:id="@+id/tel_donating02"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/txt_input"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="4" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ok_donating"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_org"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="완료"
+            android:fontFamily="@font/superbold"
+            android:textColor="#FFFFFF"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/my_account"
+            android:icon="@drawable/ic_my_account"
+            android:iconTint="#B35A0E"
+            android:title="내 계정"/>
+        <item
+            android:id="@+id/happy_donation"
+            android:icon="@drawable/ic_happy_donation"
+            android:iconTint="#B35A0E"
+            android:title="행복 나누기"/>
+        <item
+            android:id="@+id/record_donation"
+            android:icon="@drawable/ic_record_donation"
+            android:iconTint="#B35A0E"
+            android:title="내가 나눈 행복"/>
+    </group>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_user_logout"
+        android:iconTint="#B35A0E"
+        android:title="로그아웃"/>
+</menu>

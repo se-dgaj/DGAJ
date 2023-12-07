@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <group>
+
+        <item
+            android:id="@+id/my_picked_list"
+            android:enabled="true"
+            android:icon="@drawable/ic_picked"
+            android:iconTint="#B35A0E"
+            android:title="나의 저장목록"
+            />
+        <item
+            android:id="@+id/waiting_state"
+            android:enabled="true"
+            android:icon="@drawable/ic_waiting_list"
+            android:iconTint="#B35A0E"
+            android:title="대기 현황"/>
+        <item
+            android:id="@+id/my_account"
+            android:enabled="true"
+            android:icon="@drawable/ic_my_account"
+            android:iconTint="#B35A0E"
+            android:title="내 계정"/>
+    </group>
+
+    <item
+        android:id="@+id/logout"
+        android:enabled="true"
+        android:icon="@drawable/ic_user_logout"
+        android:iconTint="#B35A0E"
+        android:title="로그아웃"/>
+
+</menu>

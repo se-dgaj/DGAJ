@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shop_category">Dialog</string>
+    <string-array name="category">
+        <item> 양식 </item>
+        <item> 중식 </item>
+        <item> 한식 </item>
+        <item> 일식 </item>
+    </string-array>
+</resources>
